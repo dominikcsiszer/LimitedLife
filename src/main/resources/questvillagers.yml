@@ -1,0 +1,21 @@
+villagers:
+  - name: QuestVillager1
+    customName: "Villager One"
+    story:
+      - "Story line 1 for Villager One"
+      - "Story line 2 for Villager One"
+    location:
+      world: flatroom
+      x: -6
+      y: 60
+      z: -1
+  - name: QuestVillager2
+    customName: "Villager Two"
+    story:
+      - "Story line 1 for Villager Two"
+      - "Story line 2 for Villager Two"
+    location:
+      world: flatrooms
+      x: -10
+      y: 60
+      z: -1

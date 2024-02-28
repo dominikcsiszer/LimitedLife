@@ -1,0 +1,73 @@
+name: LimitedLife
+version: '${project.version}'
+main: limitedlife.limitedlife.LimitedLifePlugin
+api-version: '1.20'
+
+commands:
+  limitedlife:
+    description: Manage limited lifes.
+    usage: /<command>
+    permission: limitedlifeplugin.limitedlife
+
+  givelife:
+    description: Give a life for a player.
+    usage: /<command> <playerName>
+
+  setlife:
+    description: Set a life for a player.
+    usage: /<command> <playerName> <amount>
+
+  boogey:
+    description: Manage Boogeyman.
+    usage: /<command>
+    permission: limitedlifeplugin.boogey
+
+  npc:
+    description: Manage NPC's.
+    usage: /<command>
+    permission: npc.create
+
+permissions:
+  limitedlifeplugin.limitedlife:
+    description: Allows the player to use the /limitedlife command.
+    default: op
+
+  limitedlifeplugin.limitedlife.start:
+    description: Allows the player to start the limited lifes feature.
+    default: op
+
+  limitedlifeplugin.limitedlife.stop:
+    description: Allows the player to stop the limited lifes feature.
+    default: op
+
+  limitedlifeplugin.limitedlife.setlives:
+    description: Allows the player to set lives for other players.
+    default: op
+
+  limitedlifeplugin.boogey:
+    description: Allows the player to use /boogey command
+    default: op
+
+  limitedlifeplugin.boogey.fail:
+    description: Allows the player to fail the boogeyman task.
+    default: op
+
+  limitedlifeplugin.boogey.success:
+    description: Allows the player to success the boogeyman task.
+    default: op
+
+  limitedlifeplugin.boogey.choose:
+    description: Start chosing the boogeyman.
+    default: op
+
+  limitedlifeplugin.boogey.stop:
+    description: Stop the boogeyman timer.
+    default: op
+
+  limitedlifeplugin.boogey.set:
+    description: Allows the player to set the Boogeyman.
+    default: op
+
+  npc.create:
+    description: Create an npc.
+    default: op
